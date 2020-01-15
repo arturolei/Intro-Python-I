@@ -108,3 +108,9 @@ print([name[0].upper()+name[1:] for name in names if name[0].lower() == 's'])
 
 ## Dictionaries 
 my_dict = {'name':'Sherlock', 'job':'Consulting Detective'}
+## Dictionaries are not ordered? 
+
+# Set, unordered, no dup allowed
+
+# Tuples, immutable list, ordered
+students = ('student1', 'student2')
