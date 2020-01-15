@@ -102,3 +102,9 @@ names = ["Sarah", "jorge", "sam", "frank", "bob", "sandy", "shawn"]
 
 print(names)
 print([name[0].upper()+name[1:] for name in names if name[0].lower() == 's'])
+
+# Misc Notes:
+# Strings are immutable 
+
+## Dictionaries 
+my_dict = {'name':'Sherlock', 'job':'Consulting Detective'}
