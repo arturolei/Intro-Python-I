@@ -22,3 +22,28 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+import sys
+import calendar
+from datetime import datetime
+
+args_length = len(sys.argv[1:]) #length of args passed to script
+
+month = datetime.today().month #current month
+year = datetime.today().year #current year
+
+
+if args_length == False: #If there's no input
+  print(calendar.monthcalendar(year, month)) #This is not quite human readable. 
+
+elif args_length == 1:
+  month = int(sys.argv[1])
+  print(calendar.monthcalendar(year, month))
+
+elif args_length == 2 and isinstance(int(sys.argv[1]),int) and isinstance(int(sys.argv[2]),int):
+  month = int(sys.argv[1])
+  year = int(sys.argv[2])
+  print(calendar.monthcalendar(year, month))
+
+else:
+  print("Please provide a month and a year as integers, e.g. '1 2019' for January 2019")
