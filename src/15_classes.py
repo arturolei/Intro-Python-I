@@ -18,7 +18,7 @@ class WayPoint(LatLon):
         self.name = name
     
     def __str__(self):
-    #NTS __str__ is being passed the info binded to 'self' in this class + inherited class
+    #NB:  __str__ needs 'self' as parameter + inherited class
         return f'Name: {self.name},Latitude: {self.lat}, Longitude: {self.lon}'
 
 # Make a class Geocache that can be passed parameters `name`, `difficulty`,
